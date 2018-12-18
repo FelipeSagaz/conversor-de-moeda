@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Convertor de moeda</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/calculadora.css">
+</head>
+<body>
+    <h1 class="titulo">Convertor de moedas Online</h1>
+    <div class="container">
+
+        <h2 class="sub-titulo">Calculadora</h2>
+        <form class="form">
+            <label for="origem">Moeda de origem:</label>
+            <input id="origem" type="text" name="origem" placeholder="Moeda para ser convertida"><br>
+            <label for="quantiaOrigem">Quantia na moeda de origem:</label>
+            <input id="quantiaOrigem" type="number" name="quantiaOrigem" placeholder="Quantia desejada para conversão"><br>
+            <label for="convertor">Moeda para conversão:</label>
+            <input id="convertor" type="text" name="convertor" placeholder="Moeda de conversão"><br>
+            <label for="taxa">Taxa de câmbio:</label>
+            <input id="taxa" type="number" name="taxa" placeholder="Taxa para 1 unidade da moeda de origem"><br>
+            <button id="calcula">Calcular quantia</button>
+        </form>
+
+        <table class="tabela">
+            <thead>
+                <th>Moeda de origem</th>
+                <th>Quantia</th>
+                <th>Moeda para converter</th>
+                <th>Taxa</th>
+                <th>Quantia total</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/cálculo.js"></script>
+
+</body>
+</html>
